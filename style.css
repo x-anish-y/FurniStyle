@@ -147,7 +147,7 @@ body {
 .hero {
     margin-top: 70px;
     height: 600px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.678), rgba(182, 103, 0, 0.8)),
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0), rgba(228, 129, 0, 0.199), rgba(228, 129, 0, 0.822)),
                 url('https://res.cloudinary.com/spacejoy/v1617792319/server/designCollections/5ff5c27e1fb9b30036fc88bc_cover');
     background-size: cover;
     background-position: center;
