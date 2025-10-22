@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurniStyle - Modern Home Furnishings</title>
+    <meta name="description" content="Discover our stunning collection of modern furniture including chairs, tables, sofas, beds, and more. Quality furnishings for every room.">
+    <link rel="icon" href="https://www.shutterstock.com/image-illustration/wood-font-plank-letter-f-260nw-635162654.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-spinner" class="spinner-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <header id="header">
+        <nav class="nav-container">
+            <div class="logo">FurniStyle</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your Space</h1>
+            <p class="hero-subtitle">Discover premium furniture that combines style, comfort, and quality</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Search for furniture..." autocomplete="off">
+                <div id="search-suggestions" class="search-suggestions"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Collection</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous">‹</button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next">›</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="categories-section">
+        <div class="con">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="chairs">
+                    <div class="category-image">
+                        <img src="https://cdn.decornation.in/wp-content/uploads/2020/07/modern-dining-table-chairs.jpg" alt="Modern Chairs">
+                    </div>
+                    <h3 class="category-title">Chairs</h3>
+                </div>
+                <div class="category-card" data-category="tables">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=400&h=400&fit=crop" alt="Elegant Tables">
+                    </div>
+                    <h3 class="category-title">Tables</h3>
+                </div>
+                <div class="category-card" data-category="sofas">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=400&fit=crop" alt="Comfortable Sofas">
+                    </div>
+                    <h3 class="category-title">Sofas</h3>
+                </div>
+                <div class="category-card" data-category="beds">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&h=400&fit=crop" alt="Luxury Beds">
+                    </div>
+                    <h3 class="category-title">Beds</h3>
+                </div>
+                <div class="category-card" data-category="cabinets">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400&h=400&fit=crop" alt="Storage Cabinets">
+                    </div>
+                    <h3 class="category-title">Cabinets</h3>
+                </div>
+                <div class="category-card" data-category="outdoor">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=400&h=400&fit=crop" alt="Outdoor Furniture">
+                    </div>
+                    <h3 class="category-title">Outdoor</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title" id="products-title">All Products</h2>
+            <div id="products-grid" class="products-grid">
+            </div>
+        </div>
+    </section>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <h3 id="modal-name"></h3>
+                    <p id="modal-price" class="modal-price"></p>
+                    <p id="modal-description" class="modal-description"></p>
+                    <button class="cta-button">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Address:</strong> Aarey Colony, Goregaon East, Mumbai - 400065</p>
+                    <p><strong>Phone:</strong>  022 - 28461891 / 022 - 67308000, 67308106 / 07</p>
+                    <p><strong>Email:</strong> hello@furnistyle.com</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Github">Github</a>
+                        <a href="https://www.instagram.com/6_anish_9/" aria-label="Instagram">Instagram</a>
+                        <a href="https://www.youtube.com/@onex2480" aria-label="Youtube">Youtube</a>
+                        <a href="https://anni-twitter.netlify.app/" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter Signup</h3>
+                    <p>Subscribe to get updates on new arrivals and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="cta-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 FurniStyle. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
