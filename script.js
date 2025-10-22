@@ -144,7 +144,7 @@ searchInput.addEventListener('input', (e) => {
         filteredProducts.slice(0, 5).forEach(product => {
             const suggestionItem = document.createElement('div');
             suggestionItem.className = 'suggestion-item';
-            suggestionItem.textContent = `${product.name} - $${product.price}`;
+            suggestionItem.textContent = `${product.name} - ₹${product.price}`;
             suggestionItem.addEventListener('click', () => {
                 searchInput.value = product.name;
                 searchSuggestions.classList.remove('show');
@@ -180,7 +180,7 @@ categoryCards.forEach(card => {
 function openModal(product) {
     document.getElementById('modal-img').src = product.image;
     document.getElementById('modal-name').textContent = product.name;
-    document.getElementById('modal-price').textContent = `$${product.price}`;
+    document.getElementById('modal-price').textContent = `₹${product.price}`;
     document.getElementById('modal-description').textContent = product.description;
     modal.classList.add('show');
     document.body.style.overflow = 'hidden';
