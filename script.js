@@ -1,4 +1,3 @@
-// Furniture Products Data
 const products = {
     chairs: [
         { id: 1, name: 'Modern Dining Chair', price: 6999, image: 'https://cdn.decornation.in/wp-content/uploads/2020/07/modern-dining-table-chairs.jpg', description: 'Elegant dining chair with ergonomic design and premium upholstery. Perfect for modern dining rooms.' },
